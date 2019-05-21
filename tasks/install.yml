@@ -1,0 +1,8 @@
+---
+
+- name: install > Packages
+  apt:
+    name: "{{ bird2_package }}"
+    state: "{{ bird2_state }}"
+    update_cache: true
+    cache_valid_time: 3600

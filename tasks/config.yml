@@ -1,0 +1,9 @@
+---
+
+- name: config > Template
+  template:
+    src: "{{ bird2_config_template|ternary(bird2_config_template, 'config/empty.j2') }}"
+    dest: "{{ bird2_config_file }}"
+  when: (bird2_config_template is not none) or (bird2_config|length)
+  notify:
+    - bird2 reload
