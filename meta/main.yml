@@ -1,0 +1,22 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  role_name: bird2
+  author: roedie
+  description: Install and configure Bird 2
+  license: TBD
+  min_ansible_version: 2.4.0
+  issue_tracker_url: https://github.com/roedie/ansible-bird2/issues
+  platforms:
+    - name: Debian
+      versions:
+        - stretch
+  galaxy_tags:
+    - network
+    - routing
+    - BGP
+    - system
+    - OSPF
+    - bird
