@@ -1,7 +1,7 @@
 ---
 
 bird2_state: present
-bird2_package: 'bird2'
+bird2_package: bird2
 bird2_config_file: '/etc/bird/bird.conf'
 bird2_config_template: ~
 bird2_config: []
